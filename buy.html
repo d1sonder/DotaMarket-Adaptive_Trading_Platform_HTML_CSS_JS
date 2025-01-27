@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>DOTAMARKET</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/buy.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="./img/logo.png" alt="Логотип" class="img-logo">
+            </div>
+            <div class="burger-icon">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <div class="spis-mobile">
+                <span class="a"><a href="./index.html" class="spis-span-a">Главная</a></span>
+                <span class="b"><a href="./buy.html" class="spis-span-b">Купить</a></span>
+                <span class="a"><a href="./sell.html" class="spis-span-a">Продать</a></span>
+                <span class="a"><a href="./how.html" class="spis-span-a">Как это работает</a></span>
+                <span class="a"><a href="./support.html" class="spis-span-a">Тех.поддержка</a></span>
+                <span class="b"><a href="https://store.steampowered.com/login/?l=russian" class="spis-span-b">Войти в Steam</a></span>
+            </div>
+        </header>
+        <main>
+            <section class="section1">
+                <div class="img-section1">
+                    <p>Предметы в Dota 2 носят чисто косметический характер, они не дают никаких преимуществ. Но смысл в них не в преимуществе, а в том, что ты, мой уважаемый покупатель, сможешь выделяться из серой массы!</p>
+            </div>
+            </section>
+            <section class="section2">
+                <iframe src="./lenta.html" class="section2-div1">
+                    <div class="section2-div1-p">
+                        <p>Лента продаж</p>
+                    </div>
+                    <div id="sales-items" class="section2-div1-items">
+                        <div class="section2-div1-div">
+                            <div class="section2-div1-div-p">
+                                <p class="section2-div1-div-p-p1">Сегодня 13:57</p>
+                                <p class="section2-div1-div-p-p2">1 000 000 руб.</p>
+                            </div>
+                            <p class="section2-div1-p-p">Pudge Arcana</p>
+                        </div>
+                    </div>
+                </iframe>
+                
+              <script src="./js/script.js"></script>
+              <div class="section2-div2">
+
+                <div class="seach1">
+                    <div class="seach-seach1-div">
+                        <div class="seach-seach1">
+                            <div class="seach-seach-img1">
+                                <img src="./img/seach.png">
+                            </div>
+                            <div class="seach-seach-seach1">
+                                <input type="text" id="searchInput" placeholder="Поиск">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="seach-cost-div1">
+                    <p class="seach-p1">Стоимость</p>
+                    <div class="seach-cost1">
+                        <div class="seach-cost-ot1">
+                            <div class="seach-cost-ot-div1">
+                                <p>от</p>
+                            </div>
+                            <div class="seach-cost-ot-div2">
+                                <input type="text" id="searchInput" placeholder="1">
+                            </div>
+                        </div>
+                        <div class="seach-cost-difis1">
+                            <p class="seach-cost-difis-p1">-</p>
+                        </div>
+                        <div class="seach-cost-ot1">
+                            <div class="seach-cost-ot-div1">
+                                <p>до</p>
+                            </div>
+                            <div class="seach-cost-ot-div2">
+                                <input type="text" id="searchInput" placeholder="9 000 000 ">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="seach-tip11">
+                <div class="seach-tip-div1">
+                    <p class="seach-p2">Тип</p>
+                    <div class="search-tip1">
+                        <div class="search-tip-p1">
+                            <p>все</p>
+                        </div>
+                    
+                    
+
+                    <select>
+                        <optgroup label="OptionGroup">
+                            <option value="Arcana">Arcana</option>
+                            <option value="Immortal">Immortal</option>
+                            <option value="Common">Common</option>
+                        </optgroup>
+                    </select>
+                </div>
+                </div>
+                <div class="seach-tip-div1">
+                    <p class="seach-p2">Герои</p>
+                    <div class="search-tip1">
+                        <div class="search-tip-p1">
+                            <p>все</p>
+                        </div>
+                    
+                    
+
+                    <select>
+                        <optgroup label="OptionGroup">
+                            <option value="Arcana">Pudge</option>
+                            <option value="Immortal">Techies</option>
+                            <option value="Common">Ogr</option>
+                        </optgroup>
+                    </select>
+                </div>
+                </div>
+                </div>
+
+                </div>
+                <div class="techies">
+                    <div class="pudge-div" id="techies" onclick="openModal()">
+                        <div class="pudge-div-img1">
+                            <p class="pudge-div-img1-p1">Techies Arcana</p>
+                            <p class="pudge-div-img1-p2">1 000 000 руб.</p>
+                        </div>
+                        <div class="pudge-div-button">
+                            <button>Купить</button>
+                        </div>
+                    </div>
+                    
+                    <div id="modal" class="modal">
+                        <div class="modal-content">
+                            <span class="close" onclick="closeModal()">&times;</span>
+                            <p>Сумма к оплате: 1 000 000 руб.</p>
+                            <form>
+
+                                <textarea id="cardNumber" name="cardNumber" rows="1" placeholder="Номер банковской карты" required class="modal-form"></textarea>
+                            <div class="modal-div-div">
+                                <div class="modal-div">
+                                <textarea id="expirationDate" name="expirationDate" rows="1" placeholder="Месяц/Год" required class="modal-form"></textarea>
+                              </div>
+                              <div class="modal-div">
+                                <textarea id="cvv" name="cvv" rows="1"  placeholder="CVV" required class="modal-form"></textarea>
+                              </div>
+                            </div>
+                                <textarea id="fullName" name="fullName" rows="2" placeholder="Имя и Фамилия" required class="modal-form"></textarea>
+                            </form>
+                            <button onclick="pay()">Оплатить</button>
+                        </div>
+                    </div>
+                    
+                    <div class="pudge-div" id="techies" onclick="openModal()">
+                        <div class="pudge-div-img1">
+                            <p class="pudge-div-img1-p1">Techies Arcana</p>
+                            <p class="pudge-div-img1-p2">1 000 000 руб.</p>
+                        </div>
+                        <div class="pudge-div-button">
+                            <button>Купить</button>
+                        </div>
+                    </div>
+                    <div class="pudge-div" id="techies" onclick="openModal()">
+                        <div class="pudge-div-img1">
+                            <p class="pudge-div-img1-p1">Techies Arcana</p>
+                            <p class="pudge-div-img1-p2">1 000 000 руб.</p>
+                        </div>
+                        <div class="pudge-div-button">
+                            <button>Купить</button>
+                        </div>
+                    </div>
+                    <div class="pudge-div" id="pudge" onclick="openModal()">
+                        <div class="pudge-div-img2">
+                            <p class="pudge-div-img1-p1">Pudge Arcana</p>
+                            <p class="pudge-div-img1-p2">1 000 000 руб.</p>
+                        </div>
+                        <div class="pudge-div-button">
+                            <button>Купить</button>
+                        </div>
+                    </div>
+                    <div class="pudge-div" id="pudge" onclick="openModal()">
+                        <div class="pudge-div-img2">
+                            <p class="pudge-div-img1-p1">Pudge Arcana</p>
+                            <p class="pudge-div-img1-p2">1 000 000 руб.</p>
+                        </div>
+                        <div class="pudge-div-button">
+                            <button>Купить</button>
+                        </div>
+                    </div>
+                    <div class="pudge-div" id="pudge" onclick="openModal()">
+                        <div class="pudge-div-img2">
+                            <p class="pudge-div-img1-p1">Pudge Arcana</p>
+                            <p class="pudge-div-img1-p2">1 000 000 руб.</p>
+                        </div>
+                        <div class="pudge-div-button">
+                            <button>Купить</button>
+                        </div>
+                    </div>
+                    <div class="pudge-div" id="Ogr" onclick="openModal()">
+                        <div class="pudge-div-img3">
+                            <p class="pudge-div-img1-p1">Ogr Magi Arcana</p>
+                            <p class="pudge-div-img1-p2">1 000 000 руб.</p>
+                        </div>
+                        <div class="pudge-div-button">
+                            <button>Купить</button>
+                        </div>
+                    </div>
+                    <div class="pudge-div" id="Ogr" onclick="openModal()">
+                        <div class="pudge-div-img3">
+                            <p class="pudge-div-img1-p1">Ogr Magi Arcana</p>
+                            <p class="pudge-div-img1-p2">1 000 000 руб.</p>
+                        </div>
+                        <div class="pudge-div-button">
+                            <button>Купить</button>
+                        </div>
+                    </div>
+                    <div class="pudge-div" id="Ogr" onclick="openModal()">
+                        <div class="pudge-div-img3">
+                            <p class="pudge-div-img1-p1">Ogr Magi Arcana</p>
+                            <p class="pudge-div-img1-p2">1 000 000 руб.</p>
+                        </div>
+                        <div class="pudge-div-button">
+                            <button>Купить</button>
+                        </div>
+                    </div>
+            </div>
+              </div>
+            </section> 
+        </main>
+        <footer>
+            <div class="footer-div">
+            <div class="footer-div1">
+                <h1><a href="./how.html">О сайте</a></h1>
+                <p><a href="./support.html">Контакты</a></p>
+                <p><a href="./how.html">Разработчики</a></p>
+                <p><a href="./how.html">Информация</a></p>
+                <p><a href="./how.html">Наши боты</a></p>
+            </div>
+            <div class="footer-div2">
+                <h1>Соц. сети</h1>
+                <div class="footer-div2-imgs">
+                    <div class="footer-div2-imgs-img1">
+                        <a href="https://vk.com/feed">
+                        <img src="./img/vk.png"></a>
+                    </div>
+                    <div class="footer-div2-imgs-img1">
+                        <a href="https://ok.ru/"><img src="./img/ok.png"></a>
+                    </div>
+                    <div class="footer-div2-imgs-img1">
+                        <a href="https://web.telegram.org/a/"><img src="./img/tg.png"></a>
+                    </div>
+                    <div class="footer-div2-imgs-img1">
+                        <a href="https://twitter.com/?lang=ru"><img src="./img/twitter.png"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-div3">
+                <h1><a href="./support.html">Помощь</a></h1>
+                <p><a href="./support.html">Как продать вещь Dota 2 за реальные деньги?</a></p>
+                <p><a href="./support.html">Техподдержка</a></p>
+                <p><a href="./support.html">API покупки и продажи</a></p>
+                <p><a href="./support.html">API покупки и продажи v2</a></p>
+            </div>
+        </div>
+        <div class="footer-div-div">
+            <p>DotaMarket.net © 2023 – 2023, Saturia Limited, Office A, 16/F, Heng Shan Centre, 145 Queen’s Road East, Wan Chai, HK</p>
+        </div>
+        </footer>
+    </body>
+    </html>
